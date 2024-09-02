@@ -7,24 +7,13 @@ struct Person {
 }
 
 fn serialize_person(person: &Person) -> String {
-    serde_json::to_string(person).unwrap()
+    // return a JSON string from the given Person instance
 }
 
 fn deserialize_person(json: &str) -> Person {
-    serde_json::from_str(json).unwrap()
+    // return a Person instance from the given JSON string
 }
 
-fn main() {
-    let person = Person {
-        name: "Alice".to_string(),
-        age: 30,
-    };
-    let json = serialize_person(&person);
-    println!("{}", json);
-
-    let person = deserialize_person(&json);
-    println!("{:?}", person);
-}
 
 #[cfg(test)]
 mod tests {

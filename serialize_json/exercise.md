@@ -1,7 +1,12 @@
 ---
 Level (easy, medium, hard): medium
 Tags (2-5): json, strings
-GitHub to credit (leave blank if existing PR user):
+GitHub to credit (leave blank if existing PR user): https://github.com/Tanner-Ray-Martin
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
 ---
 
 # Json Serialization
