@@ -1,7 +1,7 @@
 ---
 Level (easy, medium, hard):
 Tags (2-5):
-GitHub to credit (leave blank if existing PR user):
+GitHub user to credit:
 ---
 
 # Title
