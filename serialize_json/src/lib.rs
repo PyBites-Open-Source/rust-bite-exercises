@@ -7,13 +7,12 @@ struct Person {
 }
 
 fn serialize_person(person: &Person) -> String {
-    // return a JSON string from the given Person instance
+    serde_json::to_string(person).unwrap()
 }
 
 fn deserialize_person(json: &str) -> Person {
-    // return a Person instance from the given JSON string
+    serde_json::from_str(json).unwrap()
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -33,9 +32,12 @@ mod tests {
     fn test_deserialize() {
         let json = "{\"name\":\"Bob\",\"age\":25}";
         let person = deserialize_person(json);
-        assert_eq!(person, Person {
-            name: "Bob".to_string(),
-            age: 25,
-        });
+        assert_eq!(
+            person,
+            Person {
+                name: "Bob".to_string(),
+                age: 25,
+            }
+        );
     }
 }
