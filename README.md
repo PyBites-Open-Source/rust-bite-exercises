@@ -11,11 +11,11 @@ Thanks for stopping by. This repo allows you to suggest ideas for exercises and 
 
 1. Fork this repo.
 2. Create a new directory with the exercise name (use underscores): `cp -r template my_exercise_name`
-3. Add your exercise code and tests to the `main.rs` template file.
-4. Copy the `main.rs` file to `main-template.rs` (`cp main.rs main-template.rs`) and remove the solution code here (not the tests). This is the file that users will see when they first open the exercise.
-5. Update `exercise.md` with the meta data, title and description in markdown (keep it concise please).
-6. Include your `Cargo.toml` file with the dependencies needed to run your exercise.
-7. Open a PR with your new exercise, we will review and when all good, merge it in.
-8. After merge an admin will add the exercise to the platform crediting you as the author.
+3. Add your exercise code and tests to the `src/main.rs` template file.
+4. Copy the `src/main.rs` file to `src/main-template.rs` (`cp src/main.rs src/main-template.rs`) and remove the solution code here (not the tests). This is the file that users will see when they first open the exercise.
+5. Update `exercise.md` with the meta data (header), title and description in markdown (keep it concise please).
+6. Update the `Cargo.toml` file with any dependencies needed to run your exercise.
+7. Validate the code will compile and tests will pass: `cargo test`
+8. Open a PR with your new exercise, we will review and when all good, merge it in. After merge an admin will add the exercise to the platform crediting you as the author.
 
 Happy coding and let's learn more Rust together! 🦀
