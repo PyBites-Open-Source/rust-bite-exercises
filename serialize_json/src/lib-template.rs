@@ -14,7 +14,6 @@ fn deserialize_person(json: &str) -> Person {
     // return a Person instance from the given JSON string
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -33,9 +32,12 @@ mod tests {
     fn test_deserialize() {
         let json = "{\"name\":\"Bob\",\"age\":25}";
         let person = deserialize_person(json);
-        assert_eq!(person, Person {
-            name: "Bob".to_string(),
-            age: 25,
-        });
+        assert_eq!(
+            person,
+            Person {
+                name: "Bob".to_string(),
+                age: 25,
+            }
+        );
     }
 }

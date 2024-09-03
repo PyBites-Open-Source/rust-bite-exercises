@@ -1,7 +1,8 @@
 use std::collections::HashMap;
 
 fn parse_query_params(query: &str) -> HashMap<String, String> {
-    query.split('&')
+    query
+        .split('&')
         .filter(|pair| !pair.is_empty())
         .map(|pair| {
             let mut parts = pair.splitn(2, '=');
@@ -11,7 +12,6 @@ fn parse_query_params(query: &str) -> HashMap<String, String> {
         })
         .collect()
 }
-
 
 #[cfg(test)]
 mod tests {
