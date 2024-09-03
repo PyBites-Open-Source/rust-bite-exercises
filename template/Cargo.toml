@@ -4,6 +4,3 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-// add dependencies here, complete with version numbers and features, for example:
-// serde = { version = "1", features = ["derive"] }
-// serde_json = "1"
