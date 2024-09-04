@@ -4,7 +4,7 @@ Tags (2-5): functions, math, basic-rust
 GitHub user to credit: pybites
 ---
 
-# Temperature Conversion and Even Check
+# Simple Calculations
 
 Implement two functions:
 
