@@ -1,5 +1,5 @@
 [package]
-name = "my_exercise"
+name = "rust-bite-exercises"
 version = "0.1.0"
 edition = "2021"
 
