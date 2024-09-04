@@ -1,6 +1,6 @@
 ---
 Level (easy, medium, hard): medium
-Tags (2-5): structs, ownership, methods
+Tags (2-5): structs, methods, strings
 GitHub user to credit: bbelderbos
 ---
 
