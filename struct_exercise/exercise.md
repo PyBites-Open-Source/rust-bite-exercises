@@ -19,5 +19,7 @@ let person = Person {
     email: String::from("john@example.com"),
 };
 
-let greeting = person.greet();  // Hello, my name is John and I am 30 years old. You can contact me at john@example.com
+let greeting = person.greet();
 ```
+
+This will print: `Hello, my name is John and I am 30 years old. You can contact me at john@example.com`
