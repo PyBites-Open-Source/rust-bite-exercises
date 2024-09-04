@@ -1,9 +1,9 @@
 fn fibonacci(n: i32) -> u32 {
     match n {
-        n if n < 0 => panic!("Negative input is not allowed"), // Handle negative input by panicking
-        0 => 0,                                                // Base case: fibonacci(0) = 0
-        1 => 1,                                                // Base case: fibonacci(1) = 1
-        _ => fibonacci(n - 1) + fibonacci(n - 2),              // Recursive case
+        n if n < 0 => panic!("Negative input is not allowed"),
+        0 => 0,
+        1 => 1,
+        _ => fibonacci(n - 1) + fibonacci(n - 2),
     }
 }
 
