@@ -1,5 +1,5 @@
 ---
-Level (easy, medium, hard): easy
+Level (easy, medium, hard): medium
 Tags (2-5): recursion, math, functions
 GitHub user to credit: pybites
 ---
