@@ -15,5 +15,3 @@ mod tests {
         assert_eq!(count_vowels("bcdfgh"), 0);
     }
 }
-
-
